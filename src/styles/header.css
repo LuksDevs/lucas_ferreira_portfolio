@@ -7,29 +7,42 @@
 
 header {
     background-color: var(--primary-color);
-    height: 100vw;
+    height: auto;
+    padding-block: 30px;
     display: flex;
     align-items: center;
     justify-content: center;
     box-shadow: 1px 1px 10px 0px rgba(255, 255, 255, 0.2);
+    overflow: hidden;
+    position: relative;
 }
 
 .header-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     padding-inline: 20px;
+}
+.header-img {
+    align-items: center;
+    width: 100%;
+    border-radius: 50%;
+    margin-bottom: 10px;
 }
 
 .header-content-text h1 {
     text-transform: uppercase;
     font-weight: 600;
-    font-size: 2.6rem;
+    font-size: 2.5rem;
     color: var(--text-color);
 }
 
 .header-content-text h2 {
     text-transform: uppercase;
     font-weight: 500;
-    font-size: 2.1rem;
-    color: var(--secondary-color);
+    font-size: 2rem;
+    color: var(--text-color-secondary);
     margin-top: -10px;
 }
 
@@ -41,6 +54,7 @@ header {
 /* Links projetos e contato */
 .header-links {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 10px;
@@ -50,8 +64,8 @@ header {
 .link-header {
     display: block;
     text-decoration: none;
-    font-size: 1.3rem;
-    padding: 5px;
+    font-size: 1.4rem;
+    padding: 1rem 2rem;
     border-radius: 8px;
     font-weight: 500;
     color: var(--text-color);
