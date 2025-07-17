@@ -1,0 +1,72 @@
+/* 
+    --bg-color: #18181b; 
+    --text-color: #e0e0e0;
+    --primary-color: #1e1e1e; 
+    --card-bg: #1e1e1e;
+*/
+
+header {
+    background-color: var(--primary-color);
+    height: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 1px 1px 10px 0px rgba(255, 255, 255, 0.2);
+}
+
+.header-container {
+    padding-inline: 20px;
+}
+
+.header-content-text h1 {
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 2.6rem;
+    color: var(--text-color);
+}
+
+.header-content-text h2 {
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 2.1rem;
+    color: var(--secondary-color);
+    margin-top: -10px;
+}
+
+.header-content-text p {
+    font-size: 1.22rem;
+    color: var(--text-color);
+}
+
+/* Links projetos e contato */
+.header-links {
+    display: flex;
+    justify-content: start;
+    gap: 10px;
+    align-items: center;
+    margin-top: 25px;
+}
+
+.link-header {
+    display: block;
+    text-decoration: none;
+    padding: 10px 7px;
+    font-size: 1.4rem;
+    border-radius: 8px;
+    font-weight: 500;
+    color: var(--text-color);
+}
+
+.link-view-projects {
+    background-color: var(--btn-color);
+    transition: background-color 0.3s ease-in-out;
+}
+
+.link-view-projects:hover {
+    background-color: var(--btn-color-hover);
+}
+
+.link-contact {
+    background-color: var(--primary-color);
+    border: 1px solid var(--text-color);
+}
