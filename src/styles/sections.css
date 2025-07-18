@@ -1,46 +1,65 @@
 /* SECTION ABOUT-ME */
 
 .about-me {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 1rem; /* --------------  */
-  width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    width: 100%;
+    background-color: var(--primary-color);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 12px 1px var(--shadow-color);
 }
 
+.about-me-content {
+    display: flex;
+    flex-direction: column;
+}
 
+.about-me-content h2 {
+    margin-bottom: 17px;
+}
 
+.about-me-content p {
+    font-size: 1.1rem;
+}
 
+.link-read-more-about {
+    text-decoration: none;
+    color: var(--text-color);
+    background-color: var(--btn-color);
+    align-self: flex-end;
+    padding: .7em;
+    border-radius: 10px;
+    font-size: 1.2rem;
+}
 
+.about-me-skills-container {
+    width: 100%;
+}
+.about-me-skills-container h3 {
+    margin-bottom: 15px;
+}
+.about-me-skills {
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+}
+.card-skill {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    background-color: var(--card-color);
+    padding: .5em;
+    border-radius: 5px;
+}
 .svg-icon-skill {
-  width: 2.5rem;
-  height: 2.5rem;
-  cursor: pointer;
-  transition: all 0.2s ease-in-out;
+    width: 2.5rem;
+    height: 2.5rem;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
 }
 
 .svg-icon-skill:hover {
-  transform: scale(1.1);
+    transform: scale(1.1);
 }

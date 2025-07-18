@@ -13,12 +13,14 @@
 
 .dark-mode {
     --bg-color: #09090b;
+    --primary-color: #191B20;
     --text-color: #d5d4d4;
     --text-color-secondary: #ffffff93;
-    --primary-color: #191B20;
     --btn-color: #155dfb;
-    --btn-color-hover: #0b48a4;
-    --btn-color-hover-secondary: #c3c3c342;
+    --btn-hover: #0b48a4;
+    --btn-hover-secondary: #c3c3c342;
+    --shadow-color: rgba(195, 195, 195, 0.3);
+    --card-color: #1e2939;
 }
 
 * {
@@ -34,5 +36,5 @@ body {
 }
 
 main {
-    padding: 20px;
+    padding: 30px 20px;
 }

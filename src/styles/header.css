@@ -78,7 +78,7 @@ header {
 }
 
 .link-view-projects:hover {
-    background-color: var(--btn-color-hover);
+    background-color: var(--btn-hover);
 }
 
 .link-contact {
@@ -88,5 +88,5 @@ header {
 }
 
 .link-contact:hover {
-    background-color: var(--btn-color-hover-secondary);
+    background-color: var(--btn-hover-secondary);
 }
