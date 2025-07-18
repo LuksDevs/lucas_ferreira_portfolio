@@ -1,4 +1,11 @@
 /* SECTION ABOUT-ME */
+.section-style {
+    background-color: var(--primary-color);
+    border-radius: 10px;
+    box-shadow: 0 0 12px 1px var(--shadow-color);
+    padding: 20px;
+    width: 100%;
+}
 
 .about-me {
     display: flex;
@@ -6,11 +13,6 @@
     align-items: center;
     justify-content: center;
     gap: 1rem;
-    width: 100%;
-    background-color: var(--primary-color);
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 12px 1px var(--shadow-color);
 }
 
 .about-me-content {
@@ -27,39 +29,183 @@
 }
 
 .link-read-more-about {
-    text-decoration: none;
-    color: var(--text-color);
-    background-color: var(--btn-color);
     align-self: flex-end;
-    padding: .7em;
+    background-color: var(--btn-color);
     border-radius: 10px;
+    color: var(--text-color);
     font-size: 1.2rem;
+    padding: .7em;
+    text-decoration: none;
+    margin-top: 15px;
+    transition: background-color 0.3s ease-in-out;
 }
 
+.link-read-more-about:hover {
+    background-color: var(--btn-hover);
+}
+
+/* SKILLS */
 .about-me-skills-container {
     width: 100%;
 }
+
 .about-me-skills-container h3 {
     margin-bottom: 15px;
 }
-.about-me-skills {
 
+.about-me-skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
 }
+
 .card-skill {
+    background-color: var(--card-color);
+    border-radius: 5px;
+    cursor: pointer;
     display: flex;
     align-items: center;
     gap: 5px;
-    background-color: var(--card-color);
     padding: .5em;
-    border-radius: 5px;
 }
+
 .svg-icon-skill {
-    width: 2.5rem;
-    height: 2.5rem;
-    cursor: pointer;
+    width: 1.5rem;
+    height: 1.5rem;
     transition: all 0.2s ease-in-out;
 }
 
-.svg-icon-skill:hover {
+.card-skill:hover .svg-icon-skill {
     transform: scale(1.1);
+}
+
+/* SECTION PROJECTS */
+#projects {
+    position: relative;
+    padding-block: 30px;
+}
+
+.projects-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.projects-wrapper h2 {
+    text-align: start;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+/* CAROUSEL */
+.carousel-container {
+    display: flex;
+    width: 100%;
+    position: relative;
+    padding: 20px;
+    overflow: hidden;
+}
+
+.carousel {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    gap: 20px;
+}
+
+/* CAROUSEL CONTROLS */
+.carousel-controls {
+    display: flex;
+    position: absolute;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.carousel-button {
+    background-color: transparent;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 5.5rem;
+    text-shadow: 0 0 12px var(--shadow-color);
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.carousel-button:hover {
+    background-color: var(--btn-hover-secondary);
+    color: var(--text-color);
+    
+}
+
+/* CARDS */
+.project-card {
+    background-color: var(--card-color);
+    border-radius: 10px;
+    box-shadow: 0 0 8px 1px var(--shadow-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    min-width: 340px;
+    padding: 15px;
+}
+
+.project-card-content {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.project-technologies {
+    margin-top: 5px;
+}
+
+.link-view-project {
+    align-self: flex-end;
+    background-color: var(--btn-color);
+    border-radius: 5px;
+    color: var(--text-color);
+    font-size: 1.4rem;
+    font-weight: 500;
+    text-decoration: none;
+    padding: .4em;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.link-view-project:hover {
+    background-color: var(--btn-hover);
+}
+
+/* CAROUSEL DOTS */
+.carousel-dots {
+    width: 100%;
+}
+
+.carousel-dots-list {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    list-style: none;
+}
+
+.dot {
+    background-color: var(--text-color-secondary);
+    border-radius: 50%;
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+}
+.dot:hover {
+    background-color: var(--btn-hover-secondary);
+}
+.dot.active {
+    background-color: var(--btn-color);
 }

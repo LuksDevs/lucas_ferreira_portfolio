@@ -43,7 +43,7 @@
         </div>
     </header>
     <main>
-        <section class="about-me">
+        <section class="about-me section-style">
             <div class="about-me-content">
                 <h2>
                     Sobre mim
@@ -61,16 +61,137 @@
                 <h3>Tecnologias favoritas</h3>
                 <div class="about-me-skills">
                     <span class="card-skill">
+                        <img class="svg-icon-skill" src="./assets/svg/html5-icon.svg" alt="HTML5">
+                        <p class="text-skill">
+                            HTML
+                        </p>
+                    </span>
+                    <span class="card-skill">
+                        <img class="svg-icon-skill" src="./assets/svg/css3-icon.svg" alt="css3">
+                        <p class="text-skill">
+                            CSS
+                        </p>
+                    </span>
+                    <span class="card-skill">
+                        <img class="svg-icon-skill" src="./assets/svg/reactjs-icon.svg" alt="Reactjs">
+                        <p class="text-skill">
+                            React
+                        </p>
+                    </span>
+                    <span class="card-skill">
                         <img class="svg-icon-skill" src="./assets/svg/javascript-icon.svg" alt="JavaScript">
                         <p class="text-skill">
                             JavaScript
                         </p>
                     </span>
+                    <span class="card-skill">
+                        <img class="svg-icon-skill" src="./assets/svg/tailwindcss-icon.svg" alt="TailWindCSS">
+                        <p class="text-skill">
+                            TailWindCSS
+                        </p>
+                    </span>
+                    <span class="card-skill">
+                        <img class="svg-icon-skill" src="./assets/svg/nodejs-icon.svg" alt="Node.js">
+                        <p class="text-skill">
+                            Node.js
+                        </p>
+                    </span>
+                    <span class="card-skill">
+                        <img class="svg-icon-skill" src="./assets/svg/php-icon.svg" alt="php">
+                        <p class="text-skill">
+                            PHP
+                        </p>
+                    </span>
+                    <span class="card-skill">
+                        <img class="svg-icon-skill" src="./assets/svg/laravel-icon.svg" alt="Laravel">
+                        <p class="text-skill">
+                            Laravel
+                        </p>
+                    </span>
+
+                    <span class="card-skill">
+                        <img class="svg-icon-skill" src="./assets/svg/mysql-icon.svg" alt="mysql">
+                        <p class="text-skill">
+                            MySQL
+                        </p>
+                    </span>
+                    <span class="card-skill">
+                        <img class="svg-icon-skill" src="./assets/svg/mongodb-icon.svg" alt="mongodb">
+                        <p class="text-skill">
+                            MongoDB
+                        </p>
+                    </span>
+                </div>
+            </div>
+        </section>
+        <section class="section-style" id="projects">
+            <div class="projects-wrapper">
+                <h2>Meus Projetos</h2>
+
+                <div class="carousel-container">
+                    <div class="carousel-controls">
+                        <button class="carousel-button prev" aria-label="Anterior">&lsaquo;</button>
+                        <button class="carousel-button next" aria-label="Próximo">&rsaquo;</button>
+                    </div>
+
+                    <div class="carousel">
+                        <!-- Card 1 -->
+                        <div class="project-card carousel-slide">
+                            <img src="./assets/img/projeto01.jpg" alt="Projeto E-commerce" class="project-image"
+                                width="100%">
+                            <div class="project-card-content">
+                                <h3 class="project-title">E-commerce</h3>
+                                <p class="project-description">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum
+                                </p>
+                                <div class="project-technologies">
+                                    <span class="project-card-tech">
+                                        <img class="svg-icon-skill" src="./assets/svg/html5-icon.svg" alt="HTML5">
+                                    </span>
+                                    <span class="project-card-tech">
+                                        <img class="svg-icon-skill" src="./assets/svg/css3-icon.svg" alt="CSS3">
+                                    </span>
+                                </div>
+                                <a href="#" class="link-view-project">
+                                    Acessar projeto
+                                </a>
+                            </div>
+                        </div>
+                        <!-- Card 2 -->
+                        <div class="project-card carousel-slide">
+                            <img src="./assets/img/projeto01.jpg" alt="Projeto E-commerce" class="project-image"
+                                width="100%">
+                            <div class="project-card-content">
+                                <h3 class="project-title">E-commerce</h3>
+                                <p class="project-description">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum
+                                </p>
+                                <a href="#" class="link-view-project">
+                                    Acessar projeto
+                                </a>
+                                <div class="project-technologies">
+                                    <span class="project-card-tech">
+                                        <img class="svg-icon-skill" src="./assets/svg/html5-icon.svg" alt="HTML5">
+                                    </span>
+                                    <span class="project-card-tech">
+                                        <img class="svg-icon-skill" src="./assets/svg/css3-icon.svg" alt="CSS3">
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Adicione mais cards conforme necessário -->
+                    </div>
                 </div>
 
+                <div class="carousel-dots">
+                    <ul class="carousel-dots-list">
+                        <li class="dot active"></li>
+                        <li class="dot"></li>
+                        <li class="dot"></li>
+                    </ul>
+                </div>
             </div>
         </section>
     </main>
 </body>
-
 </html>
