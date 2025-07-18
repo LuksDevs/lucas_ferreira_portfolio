@@ -210,3 +210,50 @@
 .dot.active {
     background-color: var(--btn-color);
 }
+
+/* SECTION SKILLS  */
+
+.skills {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding-block: 40px;
+}
+.skills-content {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.skill-box {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.skills-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.skill-icon {
+    background-color: var(--card-color);
+    padding: 5px;
+    border-radius: 5px;
+    width: 3em;
+    height: 3em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 8px 1px var(--shadow-color);
+    cursor: pointer;
+}
+.skill-icon:hover {
+    transform: scale(1.2);
+    transition: transform 0.3s ease-in-out;
+}
+.skill-icon img {
+    width: 80%;
+}
