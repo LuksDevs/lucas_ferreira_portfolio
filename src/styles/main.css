@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
 @import url('./header.css');
+@import url('./sections.css');
 
 /* :root {
     --bg-color: #ffffff;
@@ -15,8 +16,9 @@
     --text-color: #d5d4d4;
     --text-color-secondary: #ffffff93;
     --primary-color: #191B20;
-    --btn-color: #2b7fff;
-    --btn-color-hover: #155dfb;
+    --btn-color: #155dfb;
+    --btn-color-hover: #0b48a4;
+    --btn-color-hover-secondary: #c3c3c342;
 }
 
 * {
@@ -29,4 +31,8 @@
 body {
     background-color: var(--bg-color);
     color: var(--text-color);
+}
+
+main {
+    padding: 20px;
 }

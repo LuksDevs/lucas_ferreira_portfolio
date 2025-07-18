@@ -1,0 +1,46 @@
+/* SECTION ABOUT-ME */
+
+.about-me {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem; /* --------------  */
+  width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.svg-icon-skill {
+  width: 2.5rem;
+  height: 2.5rem;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.svg-icon-skill:hover {
+  transform: scale(1.1);
+}
