@@ -260,7 +260,7 @@
 
 /* EXPERIÊNCIAS e CERTIFICAÇÕES  */
 
-.experiences h2 {
+.title-experiences {
     margin-bottom: 20px;
 }
 
@@ -268,5 +268,13 @@
     display: flex;
     flex-direction: column;
     gap: 20px;
+}
 
+.experiences h1::after {
+    content: '';
+    display: block;
+    margin-left: 5px;
+    background-color: rgba(255,255,255,0.4);
+    width: 3px;
+    height: 50px;
 }

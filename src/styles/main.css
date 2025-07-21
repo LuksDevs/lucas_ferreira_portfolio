@@ -12,15 +12,16 @@
 } */
 
 .dark-mode {
-    --bg-color: #09090b;
-    --primary-color: #191B20;
-    --text-color: #d5d4d4;
-    --text-color-secondary: #ffffff93;
-    --btn-color: #155dfb;
-    --btn-hover: #0b48a4;
-    --btn-hover-secondary: #c3c3c342;
+    --bg-color: rgb(9, 9, 11);
+    --primary-color: rgb(25, 27, 32);
+    --text-color: rgb(213, 212, 212);
+    --text-color-secondary: rgba(255, 255, 255, 0.576);
+    --btn-color: rgb(21, 93, 251);
+    --btn-hover: rgb(11, 72, 164);
+    --btn-hover-secondary: rgba(195, 195, 195, 0.259);
     --shadow-color: rgba(195, 195, 195, 0.3);
-    --card-color: #1e2939;
+    --card-color: rgb(30, 41, 57);
+    --line-color: rgba(255,255,255,0.4);
 }
 
 * {
