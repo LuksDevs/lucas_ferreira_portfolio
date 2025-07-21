@@ -44,7 +44,7 @@
     background-color: var(--btn-hover);
 }
 
-/* SKILLS */
+/* FAVORITE TECHNOLOGIES */
 .about-me-skills-container {
     width: 100%;
 }
@@ -256,4 +256,17 @@
 }
 .skill-icon img {
     width: 80%;
+}
+
+/* EXPERIÊNCIAS e CERTIFICAÇÕES  */
+
+.experiences h2 {
+    margin-bottom: 20px;
+}
+
+.experiences-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
 }
