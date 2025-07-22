@@ -260,8 +260,10 @@
 
 /* EXPERIÊNCIAS e CERTIFICAÇÕES  */
 
-.title-experiences {
-    margin-bottom: 20px;
+.experiences {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
 }
 
 .experiences-container {
@@ -270,11 +272,30 @@
     gap: 20px;
 }
 
+.experiences-content h1,
+.experiences-content h3 {
+    font-weight: 500;
+}
+
+.experience-icon {
+    color: var(--line-color);
+}
+
 .experiences h1::after {
     content: '';
     display: block;
-    margin-left: 5px;
-    background-color: rgba(255,255,255,0.4);
+    margin-left: 10px;
+    background-color: var(--line-color);
     width: 3px;
-    height: 50px;
+    height: 25px;
+}
+
+.certifications p {
+    font-size: 1.1rem;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+.certifications p > i {
+    font-size: 1.4rem;
+    margin-right: 5px;
 }
