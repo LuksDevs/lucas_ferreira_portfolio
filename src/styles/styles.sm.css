@@ -1,3 +1,91 @@
+/* Estilos Small */
+
+/* header */
+header {
+    background-color: var(--primary-color);
+    box-shadow: 1px 1px 10px 0px rgba(255, 255, 255, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    padding-block: 30px;
+    height: auto;
+}
+
+.header-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-inline: 20px;
+}
+
+.header-img {
+    align-items: center;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+.header-content-text h1 {
+    color: var(--text-color);
+    font-weight: 600;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+}
+
+.header-content-text h2 {
+    color: var(--text-color-secondary);
+    font-weight: 500;
+    font-size: 2rem;
+    margin-top: -10px;
+    text-transform: uppercase;
+}
+
+.header-content-text p {
+    color: var(--text-color);
+    font-size: 1.22rem;
+}
+
+/* LINKS PROJETOS E CONTATO */
+.header-links {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    margin-top: 25px;
+}
+
+.link-header {
+    border-radius: 8px;
+    color: var(--text-color);
+    display: block;
+    font-weight: 500;
+    font-size: 1.4rem;
+    padding: .9rem 2rem;
+    text-decoration: none;
+}
+
+.link-view-projects {
+    background-color: var(--btn-color);
+    transition: background-color 0.3s ease-in-out;
+}
+
+.link-view-projects:hover {
+    background-color: var(--btn-hover);
+}
+
+.link-contact {
+    background-color: var(--primary-color);
+    border: 1px solid var(--text-color);
+    transition: background-color 0.3s ease-in-out;
+}
+
+.link-contact:hover {
+    background-color: var(--btn-hover-secondary);
+}
+
 /* SECTION SOBRE-MIM */
 .section-style {
     background-color: var(--primary-color);
