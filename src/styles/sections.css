@@ -1,4 +1,4 @@
-/* SECTION ABOUT-ME */
+/* SECTION SOBRE-MIM */
 .section-style {
     background-color: var(--primary-color);
     border-radius: 10px;
@@ -44,7 +44,7 @@
     background-color: var(--btn-hover);
 }
 
-/* FAVORITE TECHNOLOGIES */
+/* TECNOLOGIAS FAVORITAS */
 .about-me-skills-container {
     width: 100%;
 }
@@ -80,7 +80,7 @@
     transform: scale(1.1);
 }
 
-/* SECTION PROJECTS */
+/* SECTION PROJETOS */
 #projects {
     position: relative;
     padding-block: 30px;
@@ -211,7 +211,7 @@
     background-color: var(--btn-color);
 }
 
-/* SECTION SKILLS  */
+/* SECTION EXPERIÊNCIAS  */
 
 .skills {
     display: flex;
@@ -298,4 +298,100 @@
 .certifications p > i {
     font-size: 1.4rem;
     margin-right: 5px;
+}
+
+/* Entre em contato */
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.social-media h2 {
+    margin-bottom: 20px;
+}
+
+.social-icons {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.social-icon {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2rem;
+    
+}
+.social-icon span:hover {
+    transition: color .3s ease-in-out;
+    color: var(--card-color);
+}
+
+.social-icon i {
+    margin-right: 3px;
+    font-size: 1.7rem;
+}
+
+.social-icon:nth-child(1) i {
+    color: #0e76a8;
+}
+
+.social-icon:nth-child(3) i {
+background: linear-gradient(
+    to right,
+    #833ab4,#fd1d1d,#fcb045
+  );
+  padding: 3px 5px;
+  font-size: 1.5rem;
+  border-radius: 6px;
+}
+
+/* Formulario de Contato */
+
+.contact-form h2 {
+   margin-bottom: 20px;
+}
+
+#form_contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+#input_name,
+#message {
+    background-color: transparent;
+    border-radius: 5px;
+    border: 1px solid #fff;
+    color: var(--text-color);
+    font-size: 1.3rem;
+    outline: none;
+    padding: 8px;
+    width: 100%;
+}
+
+#input_name:focus,
+#message:focus {
+    border-color: var(--btn-color);
+}
+
+#btn_contact {
+    background-color: var(--btn-color);
+    border: none;
+    border-radius: 5px;
+    color: var(--text-color);
+    font-size: 1.4rem;
+    font-weight: 600;
+    padding-block: 10px;
+    width: 100%;
+    transition: background-color .3s ease-in-out, box-shadow .3s ease-in-out;
+}
+#btn_contact:hover {
+    background-color: var(--btn-hover);
+    box-shadow: 0 0 5px 1px rgba(255,255,255,0.1);
 }

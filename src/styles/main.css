@@ -3,15 +3,7 @@
 @import url('./header.css');
 @import url('./sections.css');
 
-/* :root {
-    --bg-color: #ffffff;
-    --text-color: #333333;
-    --primary-color: #6200ee;
-    --secondary-color: #03dac6;
-    --card-bg: #f5f5f5;
-} */
-
-.dark-mode {
+:root {
     --bg-color: rgb(9, 9, 11);
     --primary-color: rgb(25, 27, 32);
     --text-color: rgb(213, 212, 212);
