@@ -1,29 +1,35 @@
 /* Estilos medium */
 
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 768px) {
 
     /* Header */
     .box-img-header {
         height: 500px;
         width: 500px;
     }
+
     .header-content-text h1 {
         font-size: 3.5rem;
     }
+
     .header-content-text h2 {
         font-size: 2.3rem;
         margin-bottom: 15px;
     }
+
     .header-content-text p {
         font-size: 1.5rem;
     }
+
     .header-links {
         flex-direction: row;
         justify-content: start;
     }
+
     .header-links a:first-child {
         order: 2;
     }
+
     .header-links a:first-child {
         order: 1;
     }
@@ -32,9 +38,11 @@
     .about-me-content h2 {
         font-size: 2rem;
     }
+
     .about-me-content p {
         font-size: 1.5rem;
     }
+
     .about-me-skills-container h3 {
         font-size: 1.5rem;
     }
@@ -43,14 +51,22 @@
     .projects-wrapper h2 {
         font-size: 2rem;
     }
+
     .project-card {
         min-width: 550px;
     }
+
     .project-title {
         font-size: 2rem;
     }
+
     .project-description {
         font-size: 1.6rem;
+    }
+
+    .svg-icon-skill {
+        width: 2rem;
+        height: 2rem;
     }
 }
 
