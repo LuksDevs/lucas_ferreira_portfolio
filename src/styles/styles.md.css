@@ -1,6 +1,6 @@
 /* Estilos medium */
 
-@media screen and (min-width: 768px) {
+@media (min-width: 768px) and (orientation: portrait) {
 
     /* Header */
     .box-img-header {
@@ -68,16 +68,51 @@
         width: 2rem;
         height: 2rem;
     }
+
+    /* experiencia e certificações */
+    .certifications {
+        margin-top: 25px;
+    }
+
+    .social-media h2,
+    .contact-form h2 {
+        font-size: 1.9rem;
+    }
+
+    .social-icons {
+        gap: 10px;
+    }
 }
 
 
 
+@media (min-width: 768px) and (orientation: landscape) {
+    .box-img-header {
+        width: 570px;
+        height: 500px;
+    }
 
+    .header-content-text h1 {
+        font-size: 3rem;
+    }
+    .header-content-text p {
+        font-size: 1.6rem;
+    }
+    .header-links {
+        flex-direction: row;
+        justify-content: start;
+    }
+
+    .header-links a:first-child {
+        order: 2;
+    }
+
+    .header-links a:first-child {
+        order: 1;
+    }
+}
 
 /* 
- Tablets em portrait 
-@media (min-width: 768px) and (orientation: portrait) {}
-
  Tablets e desktops em landscape 
 @media (min-width: 768px) and (orientation: landscape) {}
 
