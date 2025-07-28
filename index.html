@@ -8,310 +8,93 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
         integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="src/styles/main.css">
-    <link rel="shortcut icon" href="./assets/icon/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./src/css/main.css">
+    <link rel="shortcut icon" href="" type="image/x-icon">
     <title>Lucas Ferreira - Portfólio</title>
 </head>
 
 <body>
     <header>
         <div class="header-container">
-            <div class="box-img-header">
-                <img class="header-img" src="./assets/img/perfil-exemplo.png" alt="Lucas Ferreira">
+
+            <div class="container-img-perfil">
+                <img class="img-perfil" src="./assets/img/perfil-exemplo.png" alt="Lucas Ferreira">
             </div>
+
             <div class="header-content">
                 <div class="header-content-text">
-                    <h1>
-                        Lucas Ferreira
-                    </h1>
-                    <h2>
+                    <h1 class="name-dev">Lucas Ferreira</h1>
+                    <p class="function-dev">
                         <span>FULL-STACK</span><br>
                         <span>WEB DEVELOPER</span>
-                    </h2>
-                    <P>
+                    </p>
+                    <P class="description-dev">
                         Desenvolver não é só escrever código. É dar vida ao que antes só existia na imaginação.
                     </P>
                 </div>
 
-                <div class="header-links">
-                    <a href="#contact" class="link-contact link-header">
-                        Entrar em Contato
+                <div class="header-content-buttons">
+                    <a href="#project" class="button-header button-project-header">
+                        Meus Projetos
                     </a>
-                    <a href="#project" class="link-view-projects link-header">
-                        Ver Projetos
+                    <a href="#" class="button-header button-contact-header">
+                        Entre em Contato
                     </a>
                 </div>
             </div>
         </div>
     </header>
-    <main>
-        <!-- Sobre mim -->
-        <section class="section-style">
-            <div class="about-me">
-                <div class="about-me-content">
-                    <h2>
+    <section class="about-project">
+        <div class="container-about-project">
+            <div class="container-about">
+                <div class="content-about">
+                    <h2 class="title-about">
                         Sobre mim
                     </h2>
-                    <p>
+                    <p class="description-about">
                         Sou desenvolvedor web full-stack com experiência no desenvolvimento de aplicações modernas,
                         escaláveis e centradas na experiência do usuário. Com conhecimentos em HTML, CSS, JavaScript,
                         React,
                         Node.js, PHP, Laravel, MySQL e bancos de dados.
                     </p>
-                    <a href="#" class="link-read-more-about">
-                        Leia mais!
+                    <a href="#" class="button-more-about">
+                        Saiba mais
                     </a>
                 </div>
-                <div class="about-me-skills-container">
-                    <h3>Tecnologias favoritas</h3>
-                    <div class="about-me-skills">
-                        <span class="card-skill">
-                            <img class="svg-icon-skill" src="./assets/svg/html5-icon.svg" alt="HTML5">
-                            <p class="text-skill">
-                                HTML
-                            </p>
-                        </span>
-                        <span class="card-skill">
-                            <img class="svg-icon-skill" src="./assets/svg/css3-icon.svg" alt="css3">
-                            <p class="text-skill">
-                                CSS
-                            </p>
-                        </span>
-                        <span class="card-skill">
-                            <img class="svg-icon-skill" src="./assets/svg/reactjs-icon.svg" alt="Reactjs">
-                            <p class="text-skill">
-                                React
-                            </p>
-                        </span>
-                        <span class="card-skill">
-                            <img class="svg-icon-skill" src="./assets/svg/javascript-icon.svg" alt="JavaScript">
-                            <p class="text-skill">
-                                JavaScript
-                            </p>
-                        </span>
-                        <span class="card-skill">
-                            <img class="svg-icon-skill" src="./assets/svg/tailwindcss-icon.svg" alt="TailWindCSS">
-                            <p class="text-skill">
-                                TailWindCSS
-                            </p>
-                        </span>
-                        <span class="card-skill">
-                            <img class="svg-icon-skill" src="./assets/svg/nodejs-icon.svg" alt="Node.js">
-                            <p class="text-skill">
-                                Node.js
-                            </p>
-                        </span>
-                        <span class="card-skill">
-                            <img class="svg-icon-skill" src="./assets/svg/php-icon.svg" alt="php">
-                            <p class="text-skill">
-                                PHP
-                            </p>
-                        </span>
-                        <span class="card-skill">
-                            <img class="svg-icon-skill" src="./assets/svg/laravel-icon.svg" alt="Laravel">
-                            <p class="text-skill">
-                                Laravel
-                            </p>
-                        </span>
 
-                        <span class="card-skill">
-                            <img class="svg-icon-skill" src="./assets/svg/mysql-icon.svg" alt="mysql">
-                            <p class="text-skill">
-                                MySQL
-                            </p>
-                        </span>
-                        <span class="card-skill">
-                            <img class="svg-icon-skill" src="./assets/svg/mongodb-icon.svg" alt="mongodb">
-                            <p class="text-skill">
-                                MongoDB
-                            </p>
+                <div class="container-technologies">
+                    <h3 class="title-technologies">Tecnologias favoritas</h3>
+                    <div class="container-card">
+                        <span class="span-icon">
+                            <i class="fa-brands fa-html5"></i> HTML5
                         </span>
                     </div>
-                </div>
+                </div> 
             </div>
-        </section>
-        <!-- Projetos -->
-        <section class="section-style" id="projects">
-            <div class="projects-wrapper">
+            <div class="container-project">
                 <h2>Meus Projetos</h2>
-
-                <div class="carousel-container">
-                    <div class="carousel-controls">
-                        <button class="carousel-button prev" aria-label="Anterior">&lsaquo;</button>
-                        <button class="carousel-button next" aria-label="Próximo">&rsaquo;</button>
+                <div class="container-carousel">
+                    <div class="controls-carousel">
+                        <button class="button-carousel-prev"><i class="fa-solid fa-angle-left"></i></button>
+                        <button class="button-carousel-next"><i class="fa-solid fa-angle-right"></i></button>
                     </div>
 
                     <div class="carousel">
-                        <!-- Card 1 -->
-                        <div class="project-card">
-                            <img src="./assets/img/projeto-exemplo.jpg" alt="Projeto E-commerce" class="project-image"
-                                width="100%">
-                            <div class="project-card-content">
-                                <h3 class="project-title">E-commerce</h3>
-                                <p class="project-description">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum
-                                </p>
-                                <div class="project-technologies">
-                                    <span class="project-card-tech">
-                                        <img class="svg-icon-skill" src="./assets/svg/html5-icon.svg" alt="HTML5">
-                                    </span>
-                                    <span class="project-card-tech">
-                                        <img class="svg-icon-skill" src="./assets/svg/css3-icon.svg" alt="CSS3">
-                                    </span>
-                                    <span class="project-card-tech">
-                                        <img class="svg-icon-skill" src="./assets/svg/javascript-icon.svg"
-                                            alt="JavaScript">
-                                    </span>
-                                </div>
-                                <a href="#" class="link-view-project">
-                                    Acessar projeto
-                                </a>
+                        <div class="carousel-card">
+                            <img src="./assets/img/projeto-exemplo.jpg" alt="Projeto de exemplo">
+                            <h2>Social media APP</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                            <div class="card-tools">
+                                <span>
+                                    <i class="fa-brands fa-html5"></i> HTML5
+                                </span>
                             </div>
                         </div>
-                        <div class="project-card">
-                            <img src="./assets/img/projeto-exemplo.jpg" alt="Projeto E-commerce" class="project-image"
-                                width="100%">
-                            <div class="project-card-content">
-                                <h3 class="project-title">E-commerce</h3>
-                                <p class="project-description">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum
-                                </p>
-                                <div class="project-technologies">
-                                    <span class="project-card-tech">
-                                        <img class="svg-icon-skill" src="./assets/svg/html5-icon.svg" alt="HTML5">
-                                    </span>
-                                    <span class="project-card-tech">
-                                        <img class="svg-icon-skill" src="./assets/svg/css3-icon.svg" alt="CSS3">
-                                    </span>
-                                    <span class="project-card-tech">
-                                        <img class="svg-icon-skill" src="./assets/svg/javascript-icon.svg"
-                                            alt="JavaScript">
-                                    </span>
-                                </div>
-                                <a href="#" class="link-view-project">
-                                    Acessar projeto
-                                </a>
-                            </div>
-                        </div>
-                        <!-- Adicione mais cards conforme necessário -->
-                    </div>
-                </div>
-
-                <div class="carousel-dots">
-                    <ul class="carousel-dots-list">
-                        <li class="dot active"></li>
-                        <li class="dot"></li>
-                        <li class="dot"></li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-        <!-- Habilidades -->
-        <section class="skills section-style">
-            <h2>Habilidades</h2>
-            <div class="skills-content">
-                <div class="skill-box">
-                    <h3>Front-end</h3>
-                    <div class="skills-container">
-                        <span class="skill-icon">
-                            <img src="./assets/svg/html5-icon.svg" alt="HTML5">
-                        </span>
-                        <span class="skill-icon">
-                            <img src="./assets/svg/css3-icon.svg" alt="CSS3">
-                        </span>
-                        <span class="skill-icon">
-                            <img src="./assets/svg/javascript-icon.svg" alt="JavaScript">
-                        </span>
-                        <span class="skill-icon">
-                            <img src="./assets/svg/reactjs-icon.svg" alt="React">
-                        </span>
-                        <span class="skill-icon">
-                            <img src="./assets/svg/tailwindcss-icon.svg" alt="TailWindCSS">
-                        </span>
-                    </div>
-                </div>
-                <div class="skill-box">
-                    <h3>Back-end</h3>
-                    <div class="skills-container">
-                        <span class="skill-icon">
-                            <img src="./assets/svg/nodejs-icon.svg" alt="Node.js">
-                        </span>
-                        <span class="skill-icon">
-                            <img src="./assets/svg/php-icon.svg" alt="PHP">
-                        </span>
-                        <span class="skill-icon">
-                            <img src="./assets/svg/laravel-icon.svg" alt="Laravel">
-                        </span>
-                        <span class="skill-icon">
-                            <img src="./assets/svg/mysql-icon.svg" alt="MySQL">
-                        </span>
-                        <span class="skill-icon">
-                            <img src="./assets/svg/mongodb-icon.svg" alt="MongoDB">
-                        </span>
-                    </div>
-                </div>
-                <div class="skill-box">
-                    <h3>Ferramentas</h3>
-                    <div class="skills-container">
-                        <span class="skill-icon">
-                            <img src="./assets/svg/git-icon.svg" alt="Git">
-                        </span>
-                        <span class="skill-icon">
-                            <img src="./assets/svg/github-icon.svg" alt="GitHub">
-                        </span>
                     </div>
                 </div>
             </div>
-        </section>
-        <!-- Experiências e Certificações -->
-        <section class="section-style experiences">
-            <h2>Experiências & Certificações</h2>
-            <div class="experiences-container">
-                <div class="experiences-content">
-                    <h1>
-                        <span class="experience-icon">⨀</span> Full-Stack Developer
-                    </h1>
-                    <h3>
-                        <span class="experience-icon">⨀</span> Web Development
-                    </h3>
-                </div>
-                <div class="certifications">
-                    <p>
-                        <i class="fa-solid fa-graduation-cap"></i>
-                        Cursando ADS - UNIBRA - 2025 • 2027
-                    </p>
-                </div>
-            </div>
-        </section>
-        <!-- Contato -->
-        <section class="section-style contact">
-            <div class="social-media">
-                <h2>Redes Sociais</h2>
-                <div class="social-icons">
-                    <a href="" target="_blank" class="social-icon">
-                        <i class="fa-brands fa-linkedin"></i>
-                        <span>Linkedin</span>
-                    </a>
-                    <a href="" target="_blank" class="social-icon">
-                        <i class="fa-brands fa-github"></i>
-                        <span>Github</span>
-                    </a>
-                    <a href="" target="_blank" class="social-icon">
-                        <i class="fa-brands fa-instagram"></i>
-                        <span>Instagram</span>
-                    </a>
-                </div>
-            </div>
-            <div class="contact-form">
-                <h2>Entre em Contato</h2>
-                <form id="form_contact">
-                    <input type="text" placeholder="Nome" id="input_name">
-                    <textarea placeholder="Mensagem" id="message" rows="4"></textarea>
-                    <button type="submit" id="btn_contact">Enviar</button>
-                </form>
-            </div>
-        </section>
-    </main>
+        </div>
+    </section>
 </body>
 
 </html>

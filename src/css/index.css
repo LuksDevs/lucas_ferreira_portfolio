@@ -1,0 +1,84 @@
+/* Estilização do conteúdo Header */
+header {
+    background-color: var(--primary-color);
+
+}
+.header-container {
+    display: flex;
+    justify-content: center;
+
+    gap: 20px;
+    width: 80%;
+    margin-inline: auto;
+    padding-top: 5rem;
+}
+
+.container-img-perfil {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+    order: 2;
+    width: 40%;
+}
+.img-perfil {
+    width: 100%;
+    max-width: 400px;
+    margin-left: 30px;
+}
+
+.header-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin-bottom: 40px;
+    order: 1;
+    width: 40%;
+}
+.name-dev {
+    font-size: 3.5rem;
+    font-weight: 600;
+}
+.function-dev {
+    color: var(--text-color-secondary);
+    font-size: 1.6rem;
+    font-weight: 500;
+    margin-top: -20px;
+    margin-bottom: 20px;
+}
+.description-dev {
+    color: var(--text-color-secondary);
+}
+
+.header-content-buttons {
+    margin-top: 20px;
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    justify-content: flex-start;
+}
+.button-project-header {
+    background-color: var(--btn-color);
+    transition: background-color .4s ease-in-out;
+}
+.button-project-header:hover {
+    background-color: var(--btn-hover);
+}
+.button-contact-header {
+    font-size: 1.1rem;
+    transition: color .3s ease-in-out;
+}
+.button-contact-header:hover {
+    color: var(--btn-color);
+}
+.button-header {
+    color: var(--text-color);
+    text-decoration: none;
+    padding: .3rem 1rem;
+    font-weight: 600;
+    border-radius: 10px;
+}
+
+
+/* Estilização da seção sobre-mim e Projetos */
+
+/* Container Sobre-mim */
