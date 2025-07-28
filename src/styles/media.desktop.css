@@ -1,0 +1,41 @@
+
+@media screen and (min-width: 1280px) {
+    header {
+        padding-block: 0;
+    }
+
+    .header-container {
+        padding-block: 40px;
+        width: 90%;
+    }
+    
+    .box-img-header {
+        width: 290px;
+        height: 290px;
+    }
+    
+    .header-content-text h1 {
+        font-size: 4rem;
+    }
+
+    .header-content-text p {
+        font-size: 1.5rem;
+        margin-top: 20px;
+    }
+
+    .link-header {
+        padding: 10px 30px;
+        border-radius: 30px;       
+    }
+    .about-me {
+        width: 90%;
+        margin-inline: auto;
+    }
+    .about-me-content h2 {
+        font-size: 2rem;
+    }
+    .link-read-more-about {
+        padding: 10px 30px;
+        border-radius: 30px;
+    }
+}

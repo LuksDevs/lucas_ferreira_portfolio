@@ -2,6 +2,7 @@
 
 @import url('./mobile.first.css');
 @import url('./media.md.css');
+@import url('./media.desktop.css');
 
 :root {
     --bg-color: rgb(9, 9, 11);
