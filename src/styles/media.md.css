@@ -47,13 +47,15 @@
         font-size: 1.5rem;
     }
 
+    .link-read-more-about {
+        align-self: flex-start;
+        margin-bottom: 30px;
+        font-weight: bold;
+    }
+
     /* Section Projetos */
     .projects-wrapper h2 {
         font-size: 2rem;
-    }
-
-    .project-card {
-        min-width: 550px;
     }
 
     .project-title {
@@ -82,9 +84,24 @@
     .social-icons {
         gap: 10px;
     }
+
+    .contact {
+        display: grid;
+        grid-template-columns: repeat(1fr);
+    }
+
+    .social-media {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: flex-start;
+        grid-column: 1/2;
+    }
+
+    .contact-form {
+        grid-column: 2/3;
+    }
 }
-
-
 
 @media (min-width: 768px) and (orientation: landscape) {
     .box-img-header {
@@ -95,9 +112,11 @@
     .header-content-text h1 {
         font-size: 3rem;
     }
+
     .header-content-text p {
         font-size: 1.6rem;
     }
+
     .header-links {
         flex-direction: row;
         justify-content: start;
@@ -110,13 +129,41 @@
     .header-links a:first-child {
         order: 1;
     }
+
+    .certifications {
+        margin-top: 25px;
+    }
+
+    .link-read-more-about {
+        align-self: flex-start;
+        margin-bottom: 30px;
+        font-weight: bold;
+    }
+
+    .project-card {
+        width: 550px;
+    }
+
+    .contact {
+        display: grid;
+        grid-template-columns: repeat(1fr);
+    }
+
+    .social-media {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: flex-start;
+        grid-column: 1/2;
+    }
+
+    .contact-form {
+        grid-column: 2/3;
+    }
 }
 
 /* 
- Tablets e desktops em landscape 
-@media (min-width: 768px) and (orientation: landscape) {}
 
- Telas grandes 
 
 @media (min-width: 1200px) {}
 
