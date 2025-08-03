@@ -20,7 +20,8 @@ async function getIcons() {
 }
 getIcons()
 
-document.addEventListener('DOMContentLoaded', function() {
+// ============== Carousel ==============
+document.addEventListener('DOMContentLoaded', () => {
     const carousel = document.querySelector('.carousel');
     const prevBtn = document.querySelector('.button-carousel-prev');
     const nextBtn = document.querySelector('.button-carousel-next');
@@ -31,42 +32,42 @@ document.addEventListener('DOMContentLoaded', function() {
     const totalCards = cards.length;
 
     // Atualiza a visibilidade dos botões
-    // function updateButtons() {
-    //     prevBtn.style.display = currentPosition === 0 ? 'none' : 'block';
-    //     nextBtn.style.display = currentPosition <= -(totalCards - visibleCards) * cardWidth ? 'none' : 'block';
-    // }
+    function updateButtons() {
+        prevBtn.style.display = currentPosition === 0 ? 'none' : 'block';
+        nextBtn.style.display = currentPosition <= -(totalCards - visibleCards) * cardWidth ? 'none' : 'block';
+    }
 
     // Move o carousel para a posição especificada
     function moveTo(position) {
         carousel.style.transform = `translateX(${position}px)`;
         currentPosition = position;
-        // updateButtons();
+        updateButtons();
     }
 
     // Event listeners para os botões
-    prevBtn.addEventListener('click', function() {
+    prevBtn.addEventListener('click', () => {
         const newPosition = currentPosition + cardWidth * visibleCards;
         moveTo(Math.min(newPosition, 0));
     });
 
-    nextBtn.addEventListener('click', function() {
+    nextBtn.addEventListener('click', () => {
         const maxPosition = -(totalCards - visibleCards) * cardWidth;
         const newPosition = currentPosition - cardWidth * visibleCards;
         moveTo(Math.max(newPosition, maxPosition));
     });
 
     // Inicializa os botões
-    // updateButtons();
+    updateButtons();
 
     // Opcional: Adiciona suporte para touch/swipe em dispositivos móveis
     let touchStartX = 0;
     let touchEndX = 0;
 
-    carousel.addEventListener('touchstart', function(e) {
+    carousel.addEventListener('touchstart', (e) => {
         touchStartX = e.changedTouches[0].screenX;
     }, {passive: true});
 
-    carousel.addEventListener('touchend', function(e) {
+    carousel.addEventListener('touchend', (e) => {
         touchEndX = e.changedTouches[0].screenX;
         handleSwipe();
     }, {passive: true});

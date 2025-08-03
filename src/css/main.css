@@ -4,8 +4,7 @@
 @import url('./index.css'); /* Estilo principal - Desktop */
 
 :root {
-    --bg-color: rgb(9, 9, 11);
-    --primary-color: rgb(25, 27, 32);
+    --bg-color: rgb(25, 27, 32);
     --text-color: rgb(213, 212, 212);
     --text-color-secondary: rgba(255, 255, 255, 0.576);
     --btn-color: rgb(127, 90, 240);
