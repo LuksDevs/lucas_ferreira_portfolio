@@ -96,14 +96,13 @@ header {
     margin-top: 30px;
     margin-inline: auto;
     margin-bottom: 20px;
-    width: 90%;
+    width: 80%;
 }
 
 /* Container Sobre-mim */
 
 .container-about {
     width: 50%;
-    border: 1px solid red;
 }
 
 .content-about {
@@ -161,35 +160,61 @@ header {
     transition: color .3s ease-in-out, background-color .3s ease-in-out;
 }
 
-/* Container Projetos */
+/* Container Projetos  rgba(127, 90, 240, 0.4)*/
 
 .container-project {
-    border: 1px solid red;
-    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 10px;
     width: 50%;
 }
 .h2-my-project {
-    margin-bottom: 20px;
+    align-self: flex-start;
 }
 .carousel {
     display: flex;
-    justify-content: center;
-    border: 1px solid red;
-    margin-inline: auto;
-    width: 85%;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 20px;
+    padding: 20px 0 20px 10px;
+    position: relative;
+    overflow: hidden;
+    width: 95%;
 }
-.carousel-card {
-    padding: 10px;
-    width: 100%;
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    border-radius: 10px
-}
-.carousel-card:hover {
-    border: 1px solid rgba(127, 90, 240, 0.4);
-    transition: border .3s ease-in-out;
+.button-carousel {
+    background-color: transparent;
+    border: none;
+    color: var(--btn-hover);
     cursor: pointer;
+    font-size: 2rem;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: color .3s ease-in-out;
+    z-index: 100;
 }
+.button-carousel:hover {
+    color: var(--btn-color);
+}
+.button-carousel:nth-child(1) {
+    left: 5px;
+}
+.button-carousel:nth-child(2) {
+    right: 5px;
+}
+
+/* Estilos dos cards */
+.carousel-card {
+    border-radius: 10px;
+    box-shadow: 0 0 10px 2px rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    min-width: 450px;
+}
+
 .card-img {
-    border-radius: 5px;
     width: 100%;
 }
