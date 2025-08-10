@@ -18,3 +18,4 @@ export async function getIcons() {
         console.error(`Erro ao recuperar os dados dos icons de Tecnologias favoritas! Error: ${err}`)
     }
 }
+getIcons();

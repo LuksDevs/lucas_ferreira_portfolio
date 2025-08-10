@@ -1,1 +1,1 @@
-import { getIcons } from "./icon";
+import './carousel.js';

@@ -91,7 +91,8 @@ header {
 
 /* Estilização da seção sobre-mim e Projetos */
 .about-project {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     gap: 20px;
     margin-top: 30px;
     margin-inline: auto;
@@ -102,7 +103,10 @@ header {
 /* Container Sobre-mim */
 
 .container-about {
-    width: 50%;
+    grid-column: 1/2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .content-about {
@@ -163,28 +167,58 @@ header {
 /* Container Projetos  rgba(127, 90, 240, 0.4)*/
 
 .container-project {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
-    padding: 10px;
-    width: 50%;
+    grid-column: 2/3;
+    padding-inline: 30px;
 }
+
 .h2-my-project {
     align-self: flex-start;
+    margin-left: 25px;
 }
+
+.container-carousel {
+    position: relative;
+    max-width: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
 .carousel {
     display: flex;
-    align-items: flex-start;
-    justify-content: flex-start;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    gap: 20px;
-    padding: 20px 0 20px 10px;
-    position: relative;
-    overflow: hidden;
-    width: 95%;
+    gap: 7px;
+    transition: transform .5s ease;
+    touch-action: pan-y;
 }
+
+.card-project {
+    flex: 0 0 100%;
+    padding: 15px;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    
+}
+
+.card-project:hover {
+    border-color: var(--btn-hover);
+}
+
+.card-img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.card-content h2 {
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.card-content p {
+    color: var(--text-color-secondary);
+    font-size: .8rem;
+    margin-bottom: 6px;
+}
+
 .button-carousel {
     background-color: transparent;
     border: none;
@@ -197,24 +231,50 @@ header {
     transition: color .3s ease-in-out;
     z-index: 100;
 }
+
 .button-carousel:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
     color: var(--btn-color);
-}
-.button-carousel:nth-child(1) {
-    left: 5px;
-}
-.button-carousel:nth-child(2) {
-    right: 5px;
+    padding: 20px 0;
 }
 
-/* Estilos dos cards */
-.carousel-card {
-    border-radius: 10px;
-    box-shadow: 0 0 10px 2px rgba(255, 255, 255, 0.1);
-    padding: 20px;
-    min-width: 450px;
+.button-carousel-prev {
+    left: 0;
 }
 
-.card-img {
-    width: 100%;
+.button-carousel-next {
+    right: 0;
+}
+
+.carousel-indicators {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.indicator {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #ccc;
+    margin: 0 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.indicator.active {
+    background-color: var(--btn-color);
+}
+
+@media (max-width: 768px) {
+    .card-project {
+        flex: 0 0 50%;
+    }
+}
+
+@media (max-width: 992px) {
+    .card-project {
+        flex: 0 0 33.333%;
+    }
 }
